@@ -1,3 +1,11 @@
+function liberarCotacao() {
+    var buttonCotacao = document.getElementById('cotacao');
+    buttonCotacao.disabled = true;
+    if(document.getElementById('faixa_etaria').value !== ''){
+        buttonCotacao.disabled = false;
+    }
+}
+
 $(document).ready(function() {
     $('#cotacao').click(function() {
         var dados = $('#cotacao_form').serialize();
@@ -172,5 +180,4 @@ $(document).ready(function() {
             }
         });
     });
-
 });

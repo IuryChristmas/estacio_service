@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('cotacao.form');
 });
+
+Route::get('/cotacao', ['uses' => 'CotacaoController@index', 'as' => 'cotacao.index']);

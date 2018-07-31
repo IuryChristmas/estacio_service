@@ -19,16 +19,17 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="marca">Planos</label>
-                                <select class="form-control" name="marca" id="marca">
-                                    <option value="fiat">Plano 1</option>
-                                    <option value="peugeot">Plano 2</option>
-                                    <option value="chevrolet">Plano 3</option>
-                                    <option value="troller">Plano 4</option>
+                                <label for="faixa_etaria">Faixa Etária</label>
+                                <select class="form-control" name="faixa_etaria" id="faixa_etaria" onchange="liberarCotacao()">
+                                    <option value="">Escolha sua faixa etária</option>
+                                    <option value="fiat">16-20 anos</option>
+                                    <option value="peugeot">20-25 anos</option>
+                                    <option value="chevrolet">25-30 anos</option>
+                                    <option value="troller">30-40 anos</option>
                                 </select>
                             </div>
 
-                            <button id="cotacao" type="button" class="btn btn-info">Fazer Cotação</button>
+                            <button id="cotacao" type="button" class="btn btn-info" disabled>Fazer Cotação</button>
                         </form>
 
 
@@ -38,6 +39,7 @@
                                 <thead>
                                 <tr>
                                     <th>Faixa Etária</th>
+                                    <th>Plano</th>
                                     <th>Valor</th>
                                     <th>Adquira</th>
                                 </tr>

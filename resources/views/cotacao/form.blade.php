@@ -22,10 +22,10 @@
                                 <label for="faixa_etaria">Faixa Etária</label>
                                 <select class="form-control" name="faixa_etaria" id="faixa_etaria" onchange="liberarCotacao()">
                                     <option value="">Escolha sua faixa etária</option>
-                                    <option value="fiat">16-20 anos</option>
-                                    <option value="peugeot">20-25 anos</option>
-                                    <option value="chevrolet">25-30 anos</option>
-                                    <option value="troller">30-40 anos</option>
+                                    <option value="plano_um">16-20 anos</option>
+                                    <option value="plano_dois">21-30 anos</option>
+                                    <option value="plano_tres">31-40 anos</option>
+                                    <option value="plano_quatro">41-50 anos</option>
                                 </select>
                             </div>
 
@@ -34,7 +34,7 @@
 
 
                         <div id="table-cotacao" style="display:none">
-                            <h4>Cotação para os planos <span id="marca_veiculo"></span></h4>
+                            <h4>Cotação para os planos mais indicados</h4>
                             <table class="table table-bordered" >
                                 <thead>
                                 <tr>
@@ -44,7 +44,7 @@
                                     <th>Adquira</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="cotacoes">
                                 </tbody>
                             </table>
                         </div>

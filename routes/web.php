@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/cotacao', ['uses' => 'CotacaoController@index', 'as' => 'cotacao.index']);
+Route::post('/cotacao/cotar', ['uses' => 'CotacaoController@cotar', 'as' => 'cotacao.cotar']);

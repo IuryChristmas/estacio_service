@@ -33,6 +33,7 @@
                         </form>
 
 
+                        @include('cotacao.modal.plano')
                         <div id="table-cotacao" style="display:none">
                             <h4>Cotação para os planos mais indicados</h4>
                             <table class="table table-bordered" >

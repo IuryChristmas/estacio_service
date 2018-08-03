@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Plano;
+use App\Solicitacao;
 use Illuminate\Http\Request;
 
 class CotacaoController extends Controller
@@ -25,5 +26,17 @@ class CotacaoController extends Controller
         $response = $plano->identificarPlanos($request);
 
         return response()->json($response);
+    }
+
+    public function solicitarPlano(Request $request)
+    {
+        try {
+            $solicitar = new Solicitacao();
+            $solicitar->salvarSolicitacao($request);
+
+            return response()->json(array('status' => 'ok'));
+        } catch (\Exception $e) {
+            return response()->json(array('status' => 'erro'));
+        }
     }
 }

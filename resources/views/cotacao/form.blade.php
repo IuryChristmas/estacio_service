@@ -51,23 +51,22 @@
                         </div>
 
 
-                        <div id="table-historico" style="display:none">
-                            <h3>Você será atendido em breve pelo <span id="vendedor"></span>, o e-mail de contato do vendedor é o
-                            <span id="email_vendedor"></span>! Obrigado!</h3>
+                        <div id="confirmacao" style="display:none">
+                            <h3>Você será atendido em breve por um de nossos consultores! Obrigado!</h3>
 
-                            <h4>Histórico de atendimentos</h4>
+                            {{--<h4>Histórico de atendimentos</h4>
                             <table class="table table-bordered" >
                                 <thead>
                                 <tr>
                                     <th>Data e Hora</th>
                                     <th>Nome do cliente</th>
-                                    <th>Seguradora</th>
+                                    <th>Plano</th>
                                     <th>Valor</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 </tbody>
-                            </table>
+                            </table>--}}
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@
                 <div class="inner-fields">
                     <form id="adquirir_plano_form">
                         <input type="hidden" id="_token" name="_token" value="{{ csrf_token() }}">
-                        <input type="hidden" id="id_regra" name="id_regra" value=""/>
+                        <input type="hidden" id="plano" name="plano" value=""/>
                         <div class="line-fields">
                             <div class="field">
                                 <label for="nome_cliente">Nome: </label>
@@ -45,7 +45,7 @@
 
                         <div class="buttons">
 
-                            <button id="salvar_modelo" type="button" data-dismiss="modal" class="btn btn-primary">
+                            <button id="salvar_modelo" type="button" class="btn btn-primary">
                                 Salvar
                             </button>
 

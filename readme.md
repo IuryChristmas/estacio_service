@@ -22,6 +22,8 @@ execute this command to install composer package
 composer install
 ```
 
+restore database in **database/estacio.sql**
+
 execute command to generate generate key
 
 ```

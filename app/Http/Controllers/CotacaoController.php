@@ -36,7 +36,7 @@ class CotacaoController extends Controller
 
             return response()->json(array('status' => 'ok'));
         } catch (\Exception $e) {
-            return response()->json(array('status' => 'erro'));
+            return response()->json(array('status' => $e->getMessage()));
         }
     }
 }

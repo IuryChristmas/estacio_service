@@ -1,8 +1,43 @@
-Para iniciar a aplicação
+DEMO project estacio fic
+=========================
 
-composer update para atualizar e instalar as dependências
+ - change name from .env.example to .env
+ - change config/database.php to your information 
 
-php artisan serve para iniciar o servidor do laravel
+copy file base database and change configurarions
 
-copiar e colar o arquivo _database.php dentro da pasta config
-ao colar remover o "_" e adicionar as configurações do seu banco local
+```
+cp config/_database.php config/database.php
+```
+
+copy .env file
+
+```
+cp .env.example .env
+```
+
+execute this command to install composer package
+
+```
+composer install
+```
+
+restore database in **database/estacio.sql**
+
+execute command to generate generate key
+
+```
+php artisan key:generate
+```
+ 
+ execute command to clear cache
+
+ ```
+ php artisan cache:clear
+ ```
+
+ run server local
+
+ ```
+ php artisan serve
+ ```
